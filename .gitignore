@@ -14,7 +14,7 @@
 /coverage
 
 # next.js
-/.next/
+# /.next/ — committed so Replit can serve without a build step
 /out/
 
 # production
