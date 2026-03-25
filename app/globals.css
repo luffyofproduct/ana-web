@@ -1,0 +1,136 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #004a30;
+  --primary-container: #006442;
+  --surface: #ffffff;
+  --surface-low: #f6f3ee;
+  --surface-high: #ebe8e3;
+  --surface-highest: #e5e2dd;
+  --on-surface: #1c1c19;
+  --on-surface-variant: #44483d;
+  --tertiary: #5f3600;
+  --tertiary-fixed: #ffdcbd;
+  --outline-variant: #c4c8ba;
+}
+
+@theme inline {
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-manrope);
+  --font-arabic: var(--font-tajawal);
+  --color-primary: var(--primary);
+  --color-primary-container: var(--primary-container);
+  --color-surface: var(--surface);
+  --color-surface-low: var(--surface-low);
+  --color-surface-high: var(--surface-high);
+  --color-on-surface: var(--on-surface);
+  --color-on-surface-variant: var(--on-surface-variant);
+  --color-tertiary: var(--tertiary);
+  --color-tertiary-fixed: var(--tertiary-fixed);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--surface);
+  color: var(--on-surface);
+  font-family: var(--font-inter), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-display {
+  font-family: var(--font-manrope), system-ui, sans-serif;
+}
+
+.arabic {
+  font-family: var(--font-tajawal), "Noto Naskh Arabic", "Traditional Arabic", sans-serif;
+  direction: rtl;
+  line-height: 1.8;
+}
+
+/* ── Hide scrollbars globally ──────────────────────────────────────── */
+*::-webkit-scrollbar { display: none; }
+
+/* ── Hero responsive ───────────────────────────────────────────────── */
+.flag-item--hero { font-size: 3rem; }
+@media (max-width: 480px) {
+  .flag-item--hero { font-size: 2rem; }
+}
+
+/* ── Flag marquee ──────────────────────────────────────────────────── */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.flag-marquee-track {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+  width: max-content;
+  animation: marquee 35s linear infinite;
+}
+.flag-marquee-track:hover {
+  animation-play-state: paused;
+}
+
+.flag-item {
+  display: inline-block;
+  cursor: default;
+  line-height: 1;
+  transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), filter 0.2s;
+}
+.flag-item:hover {
+  transform: scale(1.5) translateY(-4px);
+  filter: drop-shadow(0 6px 12px rgba(0,0,0,0.18));
+  position: relative;
+  z-index: 2;
+}
+
+
+/* ── Platform icons — staggered float ─────────────────────────────── */
+@keyframes platform-float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-8px); }
+}
+[title="YouTube"]  { animation: platform-float 3.8s ease-in-out infinite 0.0s; }
+[title="Chrome"]   { animation: platform-float 4.2s ease-in-out infinite 0.6s; }
+[title="WhatsApp"] { animation: platform-float 3.5s ease-in-out infinite 1.2s; }
+[title="X"]        { animation: platform-float 4.0s ease-in-out infinite 0.3s; }
+[title="Spotify"]  { animation: platform-float 3.7s ease-in-out infinite 0.9s; }
+[title="Podcasts"] { animation: platform-float 4.1s ease-in-out infinite 1.5s; }
+
+/* ── Button hover effects ──────────────────────────────────────────── */
+.btn-primary {
+  transition: transform 0.18s cubic-bezier(0.34, 1.56, 0.64, 1),
+              box-shadow 0.18s ease,
+              opacity 0.18s ease;
+}
+.btn-primary:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 8px 24px rgba(0, 74, 48, 0.35);
+}
+.btn-primary:active {
+  transform: translateY(0px) scale(0.98);
+}
+
+/* ── Email input ───────────────────────────────────────────────────── */
+.waitlist-input {
+  transition: background-color 0.2s, box-shadow 0.2s;
+  position: relative;
+}
+.waitlist-input:focus {
+  outline: none;
+  background-color: var(--surface-high) !important;
+  box-shadow: 0 0 0 2px rgba(0, 74, 48, 0.25),
+              inset 0 2px 4px rgba(0,0,0,0.04);
+}
+.waitlist-input::placeholder {
+  color: var(--outline-variant);
+  transition: opacity 0.2s;
+}
+.waitlist-input:focus::placeholder {
+  opacity: 0.5;
+}
