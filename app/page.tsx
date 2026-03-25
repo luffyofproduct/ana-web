@@ -149,7 +149,7 @@ function Nav() {
 // ─── Hero ─────────────────────────────────────────────────────────────────────
 function Hero() {
   return (
-    <section style={{
+    <section className="section-pad-hero" style={{
       position: "relative", minHeight: "100vh", display: "flex",
       flexDirection: "column", alignItems: "center", justifyContent: "center",
       padding: "9rem 2rem 7rem", textAlign: "center",
@@ -265,7 +265,7 @@ function Features() {
       <div style={{ position: "relative", zIndex: 1, maxWidth: "860px", margin: "0 auto", textAlign: "center" }}>
 
         {/* Tab nav — liquid glass pills */}
-        <div style={{
+        <div className="features-tabs-container" style={{
           display: "inline-flex", gap: "0.25rem",
           justifyContent: "center", marginBottom: "2.5rem",
           background: "rgba(255,255,255,0.45)",
@@ -315,7 +315,7 @@ function Features() {
         </p>
 
         {/* Phone + platform orbit */}
-        <div style={{ position: "relative", display: "flex", justifyContent: "center", alignItems: "center", minHeight: "720px", width: "100%" }}>
+        <div className="features-phone-area" style={{ position: "relative", display: "flex", justifyContent: "center", alignItems: "center", minHeight: "720px", width: "100%" }}>
 
           {/* Platform icons — only shown on Your content tab */}
           {f.id === "content" && (
@@ -329,7 +329,7 @@ function Features() {
                 { label: "WhatsApp", bg: "#25D366", bottom: "80px", left: "40px",
                   icon: <svg viewBox="0 0 24 24" fill="white" width="26" height="26"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> },
               ].map((p) => (
-                <div key={p.label} style={{ position: "absolute", top: p.top, bottom: (p as any).bottom, left: p.left, zIndex: 3, animation: `platformFloat${p.label} 4s ease-in-out infinite` }}>
+                <div key={p.label} className="platform-icon" style={{ position: "absolute", top: p.top, bottom: (p as any).bottom, left: p.left, zIndex: 3, animation: `platformFloat${p.label} 4s ease-in-out infinite` }}>
                   <div title={p.label} style={{
                     width: "52px", height: "52px", borderRadius: "50%",
                     backgroundColor: p.bg ?? "transparent",
@@ -351,7 +351,7 @@ function Features() {
                 { label: "Podcasts", bg: "#9933CC", bottom: "100px", right: "40px",
                   icon: <svg viewBox="0 0 24 24" fill="white" width="26" height="26"><path d="M12 1a11 11 0 100 22A11 11 0 0012 1zm0 2a9 9 0 110 18A9 9 0 0112 3zm0 2a7 7 0 100 14A7 7 0 0012 5zm0 2a5 5 0 110 10A5 5 0 0112 7zm0 2a3 3 0 100 6 3 3 0 000-6zm0 1.5a1.5 1.5 0 110 3 1.5 1.5 0 010-3zm0 4.25v3.5a.75.75 0 001.5 0v-3.5a.75.75 0 00-1.5 0z"/></svg> },
               ].map((p) => (
-                <div key={p.label} style={{ position: "absolute", top: p.top, bottom: (p as any).bottom, right: p.right, zIndex: 3 }}>
+                <div key={p.label} className="platform-icon" style={{ position: "absolute", top: p.top, bottom: (p as any).bottom, right: p.right, zIndex: 3 }}>
                   <div title={p.label} style={{
                     width: "52px", height: "52px", borderRadius: "50%",
                     backgroundColor: p.bg,
@@ -800,10 +800,10 @@ function Problem() {
         <ArabicWatermark text="فهم" top="20%" left="-2rem" size="18rem" opacity={0.04} />
       </div>
 
-      <div style={{ display: "flex", flexDirection: "row", maxWidth: "1080px", margin: "0 auto", position: "relative", zIndex: 1 }}>
+      <div className="problem-layout" style={{ display: "flex", flexDirection: "row", maxWidth: "1080px", margin: "0 auto", position: "relative", zIndex: 1 }}>
 
         {/* ── Left: sticky, full viewport height ── */}
-        <div style={{
+        <div className="problem-sticky-left" style={{
           position: "sticky", top: 0, height: "100vh", flexShrink: 0,
           width: "42%", display: "flex", alignItems: "center",
           padding: "0 3rem 0 2rem",
@@ -825,12 +825,12 @@ function Problem() {
         </div>
 
         {/* ── Right: scrollable cards, each 55vh ── */}
-        <div style={{ flex: 1, padding: "10vh 2rem 20vh 0" }}>
+        <div className="problem-right-col" style={{ flex: 1, padding: "10vh 2rem 20vh 0" }}>
           {cards.map((card, i) => (
             <div
               key={i}
               ref={el => { cardRefs.current[i] = el; }}
-              style={{ height: "55vh", display: "flex", alignItems: "center" }}
+              className="problem-card-wrapper" style={{ height: "55vh", display: "flex", alignItems: "center" }}
             >
               <div style={{
                 width: "100%",
@@ -892,7 +892,7 @@ function Problem() {
 // ─── Who it's for ─────────────────────────────────────────────────────────────
 function WhoItsFor() {
   return (
-    <section style={{ position: "relative", backgroundColor: C.surfaceLow, padding: "7rem 2rem", overflow: "hidden" }}>
+    <section className="section-pad" style={{ position: "relative", backgroundColor: C.surfaceLow, padding: "7rem 2rem", overflow: "hidden" }}>
       <HexPatternBg opacity={0.06} color={C.tertiary} />
       <ArabicWatermark text="تراث" top="5%" right="-1rem" size="18rem" opacity={0.05} />
 
@@ -946,7 +946,7 @@ function WhoItsFor() {
 // ─── Waitlist CTA ─────────────────────────────────────────────────────────────
 function WaitlistCTA() {
   return (
-    <section id="waitlist" style={{
+    <section id="waitlist" className="section-pad" style={{
       position: "relative", padding: "9rem 2rem", backgroundColor: C.surface,
       textAlign: "center", overflow: "hidden",
     }}>
@@ -1082,7 +1082,7 @@ function Footer() {
       </div>
 
       {/* Bottom bar */}
-      <div style={{
+      <div className="footer-bottom" style={{
         position: "relative", zIndex: 1,
         borderTop: "1px solid rgba(255,255,255,0.07)",
         maxWidth: "1120px", margin: "0 auto",

@@ -116,6 +116,44 @@ body {
   transform: translateY(0px) scale(0.98);
 }
 
+/* ── Mobile responsive ─────────────────────────────────────────────── */
+@media (max-width: 640px) {
+  /* Sections: reduce vertical padding */
+  .section-pad { padding-top: 5rem !important; padding-bottom: 5rem !important; }
+  .section-pad-hero { padding-top: 7rem !important; padding-bottom: 5rem !important; }
+
+  /* Features: tabs scroll horizontally */
+  .features-tabs-container {
+    max-width: calc(100vw - 2rem);
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    justify-content: flex-start !important;
+    scrollbar-width: none;
+  }
+  .features-tabs-container::-webkit-scrollbar { display: none; }
+
+  /* Features: reduce phone area height, hide platform orbit icons */
+  .features-phone-area { min-height: 560px !important; }
+  .platform-icon { display: none !important; }
+
+  /* Problem: stack vertically, disable sticky */
+  .problem-layout { flex-direction: column !important; }
+  .problem-sticky-left {
+    position: relative !important;
+    height: auto !important;
+    width: 100% !important;
+    padding: 4rem 1.5rem 2rem !important;
+  }
+  .problem-right-col { padding: 0 1.5rem 4rem !important; }
+  .problem-card-wrapper {
+    height: auto !important;
+    padding: 0.625rem 0 !important;
+  }
+
+  /* Footer bottom bar: stack */
+  .footer-bottom { flex-direction: column !important; align-items: flex-start !important; }
+}
+
 /* ── Email input ───────────────────────────────────────────────────── */
 .waitlist-input {
   transition: background-color 0.2s, box-shadow 0.2s;
