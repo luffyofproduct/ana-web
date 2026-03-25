@@ -159,7 +159,7 @@ function Hero() {
       <ArabicWatermark text="أنا" top="-2rem" right="-2rem" size="22rem" opacity={0.04} />
       <ArabicWatermark text="عربي" top="60%" left="-3rem" size="16rem" opacity={0.03} />
 
-      <div style={{ position: "relative", zIndex: 1, maxWidth: "780px", margin: "0 auto" }}>
+      <div style={{ position: "relative", zIndex: 1, maxWidth: "780px", margin: "0 auto", width: "100%" }}>
         {/* Arab diaspora flags — marquee */}
         <div style={{
           overflow: "hidden", marginBottom: "2.25rem", width: "100%",
