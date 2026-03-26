@@ -4,3 +4,185 @@
 {"timestamp":"00:03:11.340","source":"Server","level":"LOG","message":"✓ Compiled in 1245ms"}
 {"timestamp":"00:03:14.675","source":"Server","level":"LOG","message":"✓ Compiled in 188ms"}
 {"timestamp":"00:03:56.247","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"00:44:42.199","source":"Server","level":"LOG","message":"✓ Compiled in 524ms"}
+{"timestamp":"00:51:41.665","source":"Server","level":"LOG","message":"✓ Compiled in 571ms"}
+{"timestamp":"00:51:49.001","source":"Server","level":"LOG","message":"✓ Compiled in 61ms"}
+{"timestamp":"00:52:10.414","source":"Server","level":"LOG","message":"✓ Compiled in 602ms"}
+{"timestamp":"00:52:16.691","source":"Server","level":"LOG","message":"✓ Compiled in 97ms"}
+{"timestamp":"00:53:05.159","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"00:53:16.864","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"00:54:00.000","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"00:54:16.030","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"00:56:57.920","source":"Server","level":"LOG","message":"✓ Compiled in 428ms"}
+{"timestamp":"00:57:06.857","source":"Browser","level":"ERROR","message":"uncaughtError: ReferenceError: ShareSheet is not defined"}
+{"timestamp":"00:57:07.153","source":"Server","level":"ERROR","message":"[browser] \"\\u001b[31mUncaught ReferenceError: ShareSheet is not defined\\u001b[39m\\n\\u001b[31m    at ContentPreview (app/page.tsx:728:14)\\n    at ContentPreview (<anonymous>)\\u001b[39m\\n  \\u001b[90m726 |\\u001b[0m               <p className=\\u001b[32m\\\"arabic\\\"\\u001b[0m style={{ fontSize: \\u001b[32m\\\"0.8125rem\\\"\\u001b[0m, color: \\u001b[32m\\\"#fff\\\"\\u001b[0m }}>كيف تبن...\\n  \\u001b[90m727 |\\u001b[0m             </div>\\n\\u001b[31m\\u001b[1m>\\u001b[0m \\u001b[90m728 |\\u001b[0m             <\\u001b[33mShareSheet\\u001b[0m label=\\u001b[32m\\\"Add to\\\"\\u001b[0m />\\n  \\u001b[90m    |\\u001b[0m              \\u001b[31m\\u001b[1m^\\u001b[0m\\n  \\u001b[90m729 |\\u001b[0m           </div>\\n  \\u001b[90m730 |\\u001b[0m         )}\\n  \\u001b[90m731 |\\u001b[0m\""}
+{"timestamp":"00:57:07.154","source":"Browser","level":"ERROR","message":"\u001b[31mUncaught ReferenceError: ShareSheet is not defined\u001b[39m\n\u001b[31m    at ContentPreview (app/page.tsx:728:14)\n    at ContentPreview (<anonymous>)\u001b[39m\n  \u001b[90m726 |\u001b[0m               <p className=\u001b[32m\"arabic\"\u001b[0m style={{ fontSize: \u001b[32m\"0.8125rem\"\u001b[0m, color: \u001b[32m\"#fff\"\u001b[0m }}>كيف تبن...\n  \u001b[90m727 |\u001b[0m             </div>\n\u001b[31m\u001b[1m>\u001b[0m \u001b[90m728 |\u001b[0m             <\u001b[33mShareSheet\u001b[0m label=\u001b[32m\"Add to\"\u001b[0m />\n  \u001b[90m    |\u001b[0m              \u001b[31m\u001b[1m^\u001b[0m\n  \u001b[90m729 |\u001b[0m           </div>\n  \u001b[90m730 |\u001b[0m         )}\n  \u001b[90m731 |\u001b[0m"}
+{"timestamp":"00:57:09.422","source":"Server","level":"LOG","message":"✓ Compiled in 278ms"}
+{"timestamp":"00:57:09.456","source":"Server","level":"WARN","message":"⚠ Fast Refresh had to perform a full reload due to a runtime error."}
+{"timestamp":"00:57:10.645","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"00:57:17.410","source":"Server","level":"LOG","message":"✓ Compiled in 76ms"}
+{"timestamp":"01:01:58.683","source":"Server","level":"LOG","message":"✓ Compiled in 505ms"}
+{"timestamp":"01:04:41.364","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"01:06:13.571","source":"Server","level":"LOG","message":"✓ Compiled in 214ms"}
+{"timestamp":"01:06:25.499","source":"Server","level":"LOG","message":"✓ Compiled in 101ms"}
+{"timestamp":"01:06:38.595","source":"Server","level":"LOG","message":"✓ Compiled in 141ms"}
+{"timestamp":"01:19:56.805","source":"Server","level":"LOG","message":"✓ Compiled in 454ms"}
+{"timestamp":"01:23:55.689","source":"Server","level":"LOG","message":"✓ Compiled in 277ms"}
+{"timestamp":"01:24:15.943","source":"Server","level":"LOG","message":"✓ Compiled in 106ms"}
+{"timestamp":"01:28:02.279","source":"Server","level":"LOG","message":"✓ Compiled in 309ms"}
+{"timestamp":"01:28:23.664","source":"Server","level":"LOG","message":"✓ Compiled in 93ms"}
+{"timestamp":"01:28:30.982","source":"Server","level":"LOG","message":"✓ Compiled in 79ms"}
+{"timestamp":"01:28:49.597","source":"Server","level":"LOG","message":"✓ Compiled in 133ms"}
+{"timestamp":"01:29:59.826","source":"Server","level":"LOG","message":"✓ Compiled in 415ms"}
+{"timestamp":"01:30:12.220","source":"Server","level":"LOG","message":"✓ Compiled in 57ms"}
+{"timestamp":"01:30:33.104","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"01:30:36.740","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"01:32:18.179","source":"Server","level":"LOG","message":"✓ Compiled in 401ms"}
+{"timestamp":"01:33:21.776","source":"Server","level":"LOG","message":"✓ Compiled in 324ms"}
+{"timestamp":"01:35:24.334","source":"Server","level":"LOG","message":"✓ Compiled in 407ms"}
+{"timestamp":"01:35:56.134","source":"Server","level":"LOG","message":"✓ Compiled in 122ms"}
+{"timestamp":"01:41:08.846","source":"Server","level":"LOG","message":"✓ Compiled in 417ms"}
+{"timestamp":"01:41:33.535","source":"Server","level":"LOG","message":"✓ Compiled in 160ms"}
+{"timestamp":"01:42:19.674","source":"Server","level":"LOG","message":"✓ Compiled in 73ms"}
+{"timestamp":"01:42:24.491","source":"Server","level":"LOG","message":"✓ Compiled in 69ms"}
+{"timestamp":"01:42:29.047","source":"Server","level":"LOG","message":"✓ Compiled in 72ms"}
+{"timestamp":"01:45:10.172","source":"Server","level":"LOG","message":"✓ Compiled in 454ms"}
+{"timestamp":"01:45:55.031","source":"Server","level":"LOG","message":"✓ Compiled in 344ms"}
+{"timestamp":"01:46:01.677","source":"Server","level":"LOG","message":"✓ Compiled in 125ms"}
+{"timestamp":"01:46:14.998","source":"Server","level":"LOG","message":"✓ Compiled in 70ms"}
+{"timestamp":"01:46:44.949","source":"Server","level":"LOG","message":"✓ Compiled in 331ms"}
+{"timestamp":"01:46:52.116","source":"Server","level":"LOG","message":"✓ Compiled in 123ms"}
+{"timestamp":"01:46:56.093","source":"Server","level":"LOG","message":"✓ Compiled in 68ms"}
+{"timestamp":"01:47:06.440","source":"Server","level":"LOG","message":"✓ Compiled in 85ms"}
+{"timestamp":"01:59:02.828","source":"Server","level":"LOG","message":"✓ Compiled in 423ms"}
+{"timestamp":"02:56:53.487","source":"Server","level":"LOG","message":"✓ Compiled in 647ms"}
+{"timestamp":"02:59:59.679","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"03:00:59.882","source":"Server","level":"LOG","message":"✓ Compiled in 198ms"}
+{"timestamp":"03:01:05.314","source":"Server","level":"LOG","message":"✓ Compiled in 62ms"}
+{"timestamp":"03:01:30.835","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"03:06:34.366","source":"Server","level":"LOG","message":"✓ Compiled in 393ms"}
+{"timestamp":"03:06:54.449","source":"Server","level":"LOG","message":"✓ Compiled in 107ms"}
+{"timestamp":"03:07:10.418","source":"Server","level":"LOG","message":"✓ Compiled in 83ms"}
+{"timestamp":"03:10:06.197","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"03:15:51.400","source":"Server","level":"LOG","message":"✓ Compiled in 563ms"}
+{"timestamp":"03:16:06.107","source":"Server","level":"LOG","message":"✓ Compiled in 187ms"}
+{"timestamp":"03:16:13.829","source":"Server","level":"LOG","message":"✓ Compiled in 69ms"}
+{"timestamp":"03:16:36.306","source":"Server","level":"LOG","message":"✓ Compiled in 267ms"}
+{"timestamp":"03:16:51.458","source":"Server","level":"LOG","message":"✓ Compiled in 68ms"}
+{"timestamp":"03:17:32.631","source":"Server","level":"LOG","message":"✓ Compiled in 89ms"}
+{"timestamp":"03:17:46.757","source":"Server","level":"LOG","message":"✓ Compiled in 64ms"}
+{"timestamp":"03:18:21.247","source":"Server","level":"LOG","message":"✓ Compiled in 61ms"}
+{"timestamp":"03:18:30.285","source":"Server","level":"LOG","message":"✓ Compiled in 69ms"}
+{"timestamp":"03:18:56.266","source":"Server","level":"LOG","message":"✓ Compiled in 66ms"}
+{"timestamp":"03:19:20.132","source":"Server","level":"LOG","message":"✓ Compiled in 77ms"}
+{"timestamp":"03:20:16.238","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"03:21:28.702","source":"Server","level":"LOG","message":"✓ Compiled in 337ms"}
+{"timestamp":"03:21:33.671","source":"Server","level":"LOG","message":"✓ Compiled in 116ms"}
+{"timestamp":"03:23:43.953","source":"Server","level":"LOG","message":"✓ Compiled in 306ms"}
+{"timestamp":"03:23:51.069","source":"Server","level":"LOG","message":"✓ Compiled in 165ms"}
+{"timestamp":"03:24:05.746","source":"Server","level":"LOG","message":"✓ Compiled in 75ms"}
+{"timestamp":"03:24:40.725","source":"Server","level":"LOG","message":"✓ Compiled in 233ms"}
+{"timestamp":"03:24:51.198","source":"Server","level":"LOG","message":"✓ Compiled in 380ms"}
+{"timestamp":"03:25:16.492","source":"Server","level":"LOG","message":"✓ Compiled in 66ms"}
+{"timestamp":"03:25:40.284","source":"Server","level":"LOG","message":"✓ Compiled in 78ms"}
+{"timestamp":"03:25:47.829","source":"Server","level":"LOG","message":"✓ Compiled in 115ms"}
+{"timestamp":"03:27:21.628","source":"Server","level":"LOG","message":"✓ Compiled in 481ms"}
+{"timestamp":"03:27:43.352","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"03:29:01.025","source":"Server","level":"LOG","message":"✓ Compiled in 548ms"}
+{"timestamp":"03:29:09.218","source":"Server","level":"LOG","message":"✓ Compiled in 100ms"}
+{"timestamp":"03:29:21.606","source":"Server","level":"LOG","message":"✓ Compiled in 71ms"}
+{"timestamp":"03:30:07.205","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"03:31:59.056","source":"Server","level":"LOG","message":"✓ Compiled in 285ms"}
+{"timestamp":"03:32:06.678","source":"Server","level":"LOG","message":"✓ Compiled in 90ms"}
+{"timestamp":"03:32:56.397","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"03:33:05.657","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"03:37:28.277","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"03:38:32.705","source":"Server","level":"LOG","message":"✓ Compiled in 892ms"}
+{"timestamp":"03:39:21.520","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"03:45:20.090","source":"Server","level":"LOG","message":"✓ Compiled in 1077ms"}
+{"timestamp":"03:45:44.377","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"03:46:11.952","source":"Server","level":"LOG","message":"✓ Compiled in 1212ms"}
+{"timestamp":"03:49:45.451","source":"Server","level":"LOG","message":"✓ Compiled in 427ms"}
+{"timestamp":"03:49:51.196","source":"Server","level":"LOG","message":"✓ Compiled in 86ms"}
+{"timestamp":"03:50:24.519","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"03:51:02.860","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"03:53:10.406","source":"Server","level":"LOG","message":"✓ Compiled in 589ms"}
+{"timestamp":"03:53:20.475","source":"Server","level":"LOG","message":"✓ Compiled in 85ms"}
+{"timestamp":"03:55:37.023","source":"Server","level":"LOG","message":"✓ Compiled in 477ms"}
+{"timestamp":"03:59:34.172","source":"Server","level":"LOG","message":"✓ Compiled in 2.3s"}
+{"timestamp":"04:00:12.126","source":"Server","level":"LOG","message":"✓ Compiled in 2.8s"}
+{"timestamp":"04:00:13.325","source":"Browser","level":"ERROR","message":"uncaughtError: TypeError: Cannot read properties of undefined (reading 'r')"}
+{"timestamp":"04:00:13.543","source":"Server","level":"ERROR","message":"[browser] \"\\u001b[31mUncaught TypeError: Cannot read properties of undefined (reading 'r')\\u001b[39m\\n\\u001b[31m    at animate (app/page.tsx:174:20)\\u001b[39m\\n  \\u001b[90m172 |\\u001b[0m           \\u001b[36mconst\\u001b[0m hi = \\u001b[33mMath\\u001b[0m.min(lo + \\u001b[35m1\\u001b[0m, palette.length - \\u001b[35m1\\u001b[0m);\\n  \\u001b[90m173 |\\u001b[0m           \\u001b[36mconst\\u001b[0m frac = idx - lo;\\n\\u001b[31m\\u001b[1m>\\u001b[0m \\u001b[90m174 |\\u001b[0m           tmpColor.copy(palette[lo]).lerp(palette[hi], frac);\\n  \\u001b[90m    |\\u001b[0m                    \\u001b[31m\\u001b[1m^\\u001b[0m\\n  \\u001b[90m175 |\\u001b[0m           colorAttr.setXYZ(i, tmpColor.r, tmpColor.g, tmpColor.b);\\n  \\u001b[90m176 |\\u001b[0m         }\\n  \\u001b[90m177 |\\u001b[0m         colorAttr.needsUpdate = \\u001b[36mtrue\\u001b[0m;\""}
+{"timestamp":"04:00:13.556","source":"Browser","level":"ERROR","message":"\u001b[31mUncaught TypeError: Cannot read properties of undefined (reading 'r')\u001b[39m\n\u001b[31m    at animate (app/page.tsx:174:20)\u001b[39m\n  \u001b[90m172 |\u001b[0m           \u001b[36mconst\u001b[0m hi = \u001b[33mMath\u001b[0m.min(lo + \u001b[35m1\u001b[0m, palette.length - \u001b[35m1\u001b[0m);\n  \u001b[90m173 |\u001b[0m           \u001b[36mconst\u001b[0m frac = idx - lo;\n\u001b[31m\u001b[1m>\u001b[0m \u001b[90m174 |\u001b[0m           tmpColor.copy(palette[lo]).lerp(palette[hi], frac);\n  \u001b[90m    |\u001b[0m                    \u001b[31m\u001b[1m^\u001b[0m\n  \u001b[90m175 |\u001b[0m           colorAttr.setXYZ(i, tmpColor.r, tmpColor.g, tmpColor.b);\n  \u001b[90m176 |\u001b[0m         }\n  \u001b[90m177 |\u001b[0m         colorAttr.needsUpdate = \u001b[36mtrue\u001b[0m;"}
+{"timestamp":"04:01:06.868","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"04:01:07.506","source":"Browser","level":"ERROR","message":"uncaughtError: TypeError: Cannot read properties of undefined (reading 'r')"}
+{"timestamp":"04:01:07.794","source":"Server","level":"ERROR","message":"[browser] \"\\u001b[31mUncaught TypeError: Cannot read properties of undefined (reading 'r')\\u001b[39m\\n\\u001b[31m    at animate (app/page.tsx:174:20)\\u001b[39m\\n  \\u001b[90m172 |\\u001b[0m           \\u001b[36mconst\\u001b[0m hi = \\u001b[33mMath\\u001b[0m.min(lo + \\u001b[35m1\\u001b[0m, palette.length - \\u001b[35m1\\u001b[0m);\\n  \\u001b[90m173 |\\u001b[0m           \\u001b[36mconst\\u001b[0m frac = idx - lo;\\n\\u001b[31m\\u001b[1m>\\u001b[0m \\u001b[90m174 |\\u001b[0m           tmpColor.copy(palette[lo]).lerp(palette[hi], frac);\\n  \\u001b[90m    |\\u001b[0m                    \\u001b[31m\\u001b[1m^\\u001b[0m\\n  \\u001b[90m175 |\\u001b[0m           colorAttr.setXYZ(i, tmpColor.r, tmpColor.g, tmpColor.b);\\n  \\u001b[90m176 |\\u001b[0m         }\\n  \\u001b[90m177 |\\u001b[0m         colorAttr.needsUpdate = \\u001b[36mtrue\\u001b[0m;\""}
+{"timestamp":"04:01:07.794","source":"Browser","level":"ERROR","message":"\u001b[31mUncaught TypeError: Cannot read properties of undefined (reading 'r')\u001b[39m\n\u001b[31m    at animate (app/page.tsx:174:20)\u001b[39m\n  \u001b[90m172 |\u001b[0m           \u001b[36mconst\u001b[0m hi = \u001b[33mMath\u001b[0m.min(lo + \u001b[35m1\u001b[0m, palette.length - \u001b[35m1\u001b[0m);\n  \u001b[90m173 |\u001b[0m           \u001b[36mconst\u001b[0m frac = idx - lo;\n\u001b[31m\u001b[1m>\u001b[0m \u001b[90m174 |\u001b[0m           tmpColor.copy(palette[lo]).lerp(palette[hi], frac);\n  \u001b[90m    |\u001b[0m                    \u001b[31m\u001b[1m^\u001b[0m\n  \u001b[90m175 |\u001b[0m           colorAttr.setXYZ(i, tmpColor.r, tmpColor.g, tmpColor.b);\n  \u001b[90m176 |\u001b[0m         }\n  \u001b[90m177 |\u001b[0m         colorAttr.needsUpdate = \u001b[36mtrue\u001b[0m;"}
+{"timestamp":"04:01:24.639","source":"Server","level":"LOG","message":"✓ Compiled in 436ms"}
+{"timestamp":"04:01:31.268","source":"Server","level":"LOG","message":"✓ Compiled in 293ms"}
+{"timestamp":"04:02:26.524","source":"Server","level":"LOG","message":"✓ Compiled in 266ms"}
+{"timestamp":"04:02:31.663","source":"Server","level":"LOG","message":"✓ Compiled in 77ms"}
+{"timestamp":"04:02:59.271","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"04:04:00.909","source":"Server","level":"LOG","message":"✓ Compiled in 362ms"}
+{"timestamp":"04:04:19.158","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"04:05:47.500","source":"Server","level":"LOG","message":"✓ Compiled in 544ms"}
+{"timestamp":"04:06:08.180","source":"Server","level":"LOG","message":"✓ Compiled in 121ms"}
+{"timestamp":"04:11:45.879","source":"Server","level":"LOG","message":"✓ Compiled in 652ms"}
+{"timestamp":"04:11:49.890","source":"Server","level":"LOG","message":"✓ Compiled in 153ms"}
+{"timestamp":"04:11:54.777","source":"Server","level":"LOG","message":"✓ Compiled in 102ms"}
+{"timestamp":"04:15:11.405","source":"Server","level":"LOG","message":"✓ Compiled in 1003ms"}
+{"timestamp":"04:15:22.932","source":"Server","level":"LOG","message":"✓ Compiled in 202ms"}
+{"timestamp":"04:16:26.673","source":"Server","level":"LOG","message":"✓ Compiled in 513ms"}
+{"timestamp":"08:28:37.886","source":"Server","level":"LOG","message":"✓ Compiled in 1488ms"}
+{"timestamp":"08:28:45.094","source":"Server","level":"LOG","message":"✓ Compiled in 698ms"}
+{"timestamp":"08:30:33.433","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"08:35:41.200","source":"Server","level":"LOG","message":"✓ Compiled in 853ms"}
+{"timestamp":"08:39:26.428","source":"Server","level":"LOG","message":"✓ Compiled in 1469ms"}
+{"timestamp":"08:41:51.497","source":"Server","level":"LOG","message":"✓ Compiled in 469ms"}
+{"timestamp":"08:42:49.725","source":"Server","level":"LOG","message":"✓ Compiled in 448ms"}
+{"timestamp":"08:43:02.309","source":"Server","level":"LOG","message":"✓ Compiled in 206ms"}
+{"timestamp":"08:43:02.473","source":"Browser","level":"ERROR","message":"The final argument passed to %s changed size between renders. The order and size of this array must remain constant.\n\nPrevious: %s\nIncoming: %s useEffect [1] [0, 1]"}
+{"timestamp":"08:43:02.946","source":"Server","level":"ERROR","message":"[browser] \"The final argument passed to useEffect changed size between renders. The order and size of this array must remain constant.\\n\\nPrevious: [1]\\nIncoming: [0, 1]\" \"\\n\\u001b[31m    at ContentPreview (app/page.tsx:609:12)\\n    at Set.forEach (<anonymous>)\\u001b[39m\\n  \\u001b[90m607 |\\u001b[0m\\n  \\u001b[90m608 |\\u001b[0m   \\u001b[90m// Phase timer — step 0 gets extra time for drip-feed\\u001b[0m\\n\\u001b[31m\\u001b[1m>\\u001b[0m \\u001b[90m609 |\\u001b[0m   useEffect(() => {\\n  \\u001b[90m    |\\u001b[0m            \\u001b[31m\\u001b[1m^\\u001b[0m\\n  \\u001b[90m610 |\\u001b[0m     \\u001b[36mconst\\u001b[0m delay = (source === \\u001b[32m\\\"whatsapp\\\"\\u001b[0m && step === \\u001b[35m0\\u001b[0m) ? \\u001b[35m5500\\u001b[0m : \\u001b[35m2800\\u001b[0m;\\n  \\u001b[90m611 |\\u001b[0m     \\u001b[36mconst\\u001b[0m t = setTimeout(() => setPhase(p => {\\n  \\u001b[90m612 |\\u001b[0m       \\u001b[36mif\\u001b[0m (p < \\u001b[35m5\\u001b[0m) \\u001b[36mreturn\\u001b[0m (p + \\u001b[35m1\\u001b[0m) % \\u001b[35m5\\u001b[0m;\" \"\\u001b[2m(app/page.tsx:609:12)\\u001b[22m\""}
+{"timestamp":"08:43:02.946","source":"Browser","level":"ERROR","message":"The final argument passed to useEffect changed size between renders. The order and size of this array must remain constant.\n\nPrevious: [1]\nIncoming: [0, 1] \"\\n\\u001b[31m    at ContentPreview (app/page.tsx:609:12)\\n    at Set.forEach (<anonymous>)\\u001b[39m\\n  \\u001b[90m607 |\\u001b[0m\\n  \\u001b[90m608 |\\u001b[0m   \\u001b[90m// Phase timer — step 0 gets extra time for drip-feed\\u001b[0m\\n\\u001b[31m\\u001b[1m>\\u001b[0m \\u001b[90m609 |\\u001b[0m   useEffect(() => {\\n  \\u001b[90m    |\\u001b[0m            \\u001b[31m\\u001b[1m^\\u001b[0m\\n  \\u001b[90m610 |\\u001b[0m     \\u001b[36mconst\\u001b[0m delay = (source === \\u001b[32m\\\"whatsapp\\\"\\u001b[0m && step === \\u001b[35m0\\u001b[0m) ? \\u001b[35m5500\\u001b[0m : \\u001b[35m2800\\u001b[0m;\\n  \\u001b[90m611 |\\u001b[0m     \\u001b[36mconst\\u001b[0m t = setTimeout(() => setPhase(p => {\\n  \\u001b[90m612 |\\u001b[0m       \\u001b[36mif\\u001b[0m (p < \\u001b[35m5\\u001b[0m) \\u001b[36mreturn\\u001b[0m (p + \\u001b[35m1\\u001b[0m) % \\u001b[35m5\\u001b[0m;\" \"\\u001b[2m(app/page.tsx:609:12)\\u001b[22m\""}
+{"timestamp":"08:46:31.392","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"08:47:58.090","source":"Server","level":"LOG","message":"✓ Compiled in 481ms"}
+{"timestamp":"08:48:17.832","source":"Server","level":"LOG","message":"✓ Compiled in 240ms"}
+{"timestamp":"08:48:28.829","source":"Server","level":"LOG","message":"✓ Compiled in 345ms"}
+{"timestamp":"08:50:13.647","source":"Server","level":"LOG","message":"✓ Compiled in 898ms"}
+{"timestamp":"08:50:31.253","source":"Server","level":"LOG","message":"✓ Compiled in 872ms"}
+{"timestamp":"08:50:42.348","source":"Server","level":"LOG","message":"✓ Compiled in 335ms"}
+{"timestamp":"08:50:58.953","source":"Server","level":"LOG","message":"✓ Compiled in 279ms"}
+{"timestamp":"08:52:41.852","source":"Server","level":"LOG","message":"✓ Compiled in 301ms"}
+{"timestamp":"08:53:03.021","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"08:54:39.667","source":"Server","level":"LOG","message":"✓ Compiled in 324ms"}
+{"timestamp":"08:54:47.924","source":"Server","level":"LOG","message":"✓ Compiled in 261ms"}
+{"timestamp":"08:55:02.886","source":"Server","level":"LOG","message":"✓ Compiled in 223ms"}
+{"timestamp":"08:55:52.802","source":"Server","level":"LOG","message":"✓ Compiled in 170ms"}
+{"timestamp":"08:56:22.211","source":"Server","level":"LOG","message":"✓ Compiled in 118ms"}
+{"timestamp":"08:56:28.078","source":"Server","level":"LOG","message":"✓ Compiled in 136ms"}
+{"timestamp":"09:02:33.817","source":"Server","level":"LOG","message":"✓ Compiled in 1108ms"}
+{"timestamp":"09:07:03.764","source":"Server","level":"LOG","message":"✓ Compiled in 1749ms"}
+{"timestamp":"09:07:41.514","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"09:08:10.696","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"09:08:54.478","source":"Server","level":"LOG","message":"✓ Compiled in 3.2s"}
+{"timestamp":"09:08:59.901","source":"Server","level":"LOG","message":"✓ Compiled in 199ms"}
+{"timestamp":"09:09:14.576","source":"Server","level":"LOG","message":"✓ Compiled in 614ms"}
+{"timestamp":"09:09:23.588","source":"Server","level":"LOG","message":"✓ Compiled in 181ms"}
+{"timestamp":"09:09:36.098","source":"Server","level":"LOG","message":"✓ Compiled in 413ms"}
+{"timestamp":"09:11:33.142","source":"Server","level":"LOG","message":"✓ Compiled in 547ms"}
+{"timestamp":"09:11:43.408","source":"Server","level":"LOG","message":"✓ Compiled in 158ms"}
+{"timestamp":"09:12:05.337","source":"Server","level":"LOG","message":"✓ Compiled in 683ms"}
+{"timestamp":"09:13:17.511","source":"Server","level":"LOG","message":"✓ Compiled in 610ms"}
+{"timestamp":"09:13:26.216","source":"Server","level":"LOG","message":"✓ Compiled in 417ms"}
+{"timestamp":"09:13:35.186","source":"Server","level":"LOG","message":"✓ Compiled in 73ms"}
+{"timestamp":"09:23:47.516","source":"Server","level":"LOG","message":"✓ Compiled in 1750ms"}
+{"timestamp":"09:23:49.150","source":"Browser","level":"ERROR","message":"uncaughtError: ReferenceError: FeatureDialect is not defined"}
+{"timestamp":"09:23:49.794","source":"Server","level":"ERROR","message":"[browser] \"\\u001b[31mUncaught ReferenceError: FeatureDialect is not defined\\u001b[39m\\n\\u001b[31m    at Home (app/page.tsx:219:8)\\n    at Set.forEach (<anonymous>)\\u001b[39m\\n  \\u001b[90m217 |\\u001b[0m       <\\u001b[33mNav\\u001b[0m />\\n  \\u001b[90m218 |\\u001b[0m       <\\u001b[33mHero\\u001b[0m />\\n\\u001b[31m\\u001b[1m>\\u001b[0m \\u001b[90m219 |\\u001b[0m       <\\u001b[33mFeatureDialect\\u001b[0m />\\n  \\u001b[90m    |\\u001b[0m        \\u001b[31m\\u001b[1m^\\u001b[0m\\n  \\u001b[90m220 |\\u001b[0m       <\\u001b[33mFeatureContent\\u001b[0m />\\n  \\u001b[90m221 |\\u001b[0m       <\\u001b[33mFeatureStudy\\u001b[0m />\\n  \\u001b[90m222 |\\u001b[0m       <\\u001b[33mFeaturePractice\\u001b[0m />\""}
+{"timestamp":"09:23:49.795","source":"Browser","level":"ERROR","message":"\u001b[31mUncaught ReferenceError: FeatureDialect is not defined\u001b[39m\n\u001b[31m    at Home (app/page.tsx:219:8)\n    at Set.forEach (<anonymous>)\u001b[39m\n  \u001b[90m217 |\u001b[0m       <\u001b[33mNav\u001b[0m />\n  \u001b[90m218 |\u001b[0m       <\u001b[33mHero\u001b[0m />\n\u001b[31m\u001b[1m>\u001b[0m \u001b[90m219 |\u001b[0m       <\u001b[33mFeatureDialect\u001b[0m />\n  \u001b[90m    |\u001b[0m        \u001b[31m\u001b[1m^\u001b[0m\n  \u001b[90m220 |\u001b[0m       <\u001b[33mFeatureContent\u001b[0m />\n  \u001b[90m221 |\u001b[0m       <\u001b[33mFeatureStudy\u001b[0m />\n  \u001b[90m222 |\u001b[0m       <\u001b[33mFeaturePractice\u001b[0m />"}
+{"timestamp":"09:25:22.230","source":"Server","level":"LOG","message":"✓ Compiled in 719ms"}
+{"timestamp":"09:25:22.416","source":"Server","level":"WARN","message":"⚠ Fast Refresh had to perform a full reload due to a runtime error."}
+{"timestamp":"09:25:52.754","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"09:26:33.136","source":"Server","level":"LOG","message":"✓ Compiled in 3.8s"}
+{"timestamp":"09:31:24.379","source":"Server","level":"LOG","message":"✓ Compiled in 1846ms"}
+{"timestamp":"09:31:38.765","source":"Server","level":"LOG","message":"✓ Compiled in 719ms"}
+{"timestamp":"09:31:46.502","source":"Server","level":"LOG","message":"✓ Compiled in 191ms"}

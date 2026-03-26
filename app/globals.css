@@ -92,17 +92,32 @@ body {
 }
 
 
-/* ── Platform icons — staggered float ─────────────────────────────── */
+/* ── Platform icons — staggered float + hover ────────────────────── */
 @keyframes platform-float {
   0%, 100% { transform: translateY(0px); }
   50%       { transform: translateY(-8px); }
 }
-[title="YouTube"]  { animation: platform-float 3.8s ease-in-out infinite 0.0s; }
-[title="Chrome"]   { animation: platform-float 4.2s ease-in-out infinite 0.6s; }
-[title="WhatsApp"] { animation: platform-float 3.5s ease-in-out infinite 1.2s; }
-[title="X"]        { animation: platform-float 4.0s ease-in-out infinite 0.3s; }
-[title="Spotify"]  { animation: platform-float 3.7s ease-in-out infinite 0.9s; }
-[title="Podcasts"] { animation: platform-float 4.1s ease-in-out infinite 1.5s; }
+.platform-icon [title] {
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1),
+              box-shadow 0.25s ease,
+              filter 0.25s ease;
+  cursor: pointer;
+}
+.platform-icon:hover [title] {
+  transform: scale(1.18);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.22), 0 0 0 4px rgba(255,255,255,0.8);
+  filter: brightness(1.08);
+}
+.platform-icon:active [title] {
+  transform: scale(1.05);
+  transition-duration: 0.1s;
+}
+[title="YouTube"]   { animation: platform-float 3.8s ease-in-out infinite 0.0s; }
+[title="Chrome"]    { animation: platform-float 4.2s ease-in-out infinite 0.6s; }
+[title="WhatsApp"]  { animation: platform-float 3.5s ease-in-out infinite 1.2s; }
+[title="X"]         { animation: platform-float 4.0s ease-in-out infinite 0.3s; }
+[title="TikTok"]    { animation: platform-float 3.7s ease-in-out infinite 0.9s; }
+[title="Instagram"] { animation: platform-float 4.1s ease-in-out infinite 1.5s; }
 
 /* ── Button hover effects ──────────────────────────────────────────── */
 .btn-primary {
@@ -124,18 +139,16 @@ body {
   .section-pad { padding-top: 5rem !important; padding-bottom: 5rem !important; }
   .section-pad-hero { padding-top: 7rem !important; padding-bottom: 5rem !important; }
 
-  /* Features: tabs scroll horizontally */
-  .features-tabs-container {
-    max-width: calc(100vw - 2rem);
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    justify-content: flex-start !important;
-    scrollbar-width: none;
+  /* Feature sections: stack vertically on mobile, text always first */
+  .feature-section { padding: 3rem 1.25rem !important; }
+  .feature-row {
+    flex-direction: column !important;
+    gap: 2rem !important;
+    text-align: center;
   }
-  .features-tabs-container::-webkit-scrollbar { display: none; }
-
-  /* Features: reduce phone area height, hide platform orbit icons */
-  .features-phone-area { min-height: 560px !important; }
+  .feature-row > div:last-child {
+    min-height: 480px !important;
+  }
   .platform-icon { display: none !important; }
 
   /* Problem: stack vertically, disable sticky */
@@ -154,6 +167,16 @@ body {
 
   /* Footer bottom bar: stack */
   .footer-bottom { flex-direction: column !important; align-items: flex-start !important; }
+}
+
+/* ── Content preview step animation ───────────────────────────────── */
+@keyframes stepFadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes wordPop {
+  from { opacity: 0; transform: scale(0.85); }
+  to   { opacity: 1; transform: scale(1); }
 }
 
 /* ── Email input ───────────────────────────────────────────────────── */
