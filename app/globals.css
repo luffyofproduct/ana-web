@@ -97,19 +97,21 @@ body {
   0%, 100% { transform: translateY(0px); }
   50%       { transform: translateY(-8px); }
 }
-.platform-icon [title] {
-  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1),
-              box-shadow 0.25s ease,
-              filter 0.25s ease;
+.platform-icon {
   cursor: pointer;
 }
-.platform-icon:hover [title] {
-  transform: scale(1.18);
-  box-shadow: 0 8px 28px rgba(0,0,0,0.22), 0 0 0 4px rgba(255,255,255,0.8);
-  filter: brightness(1.08);
+.platform-icon > div {
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
+              box-shadow 0.3s ease,
+              filter 0.3s ease;
 }
-.platform-icon:active [title] {
-  transform: scale(1.05);
+.platform-icon:hover > div {
+  transform: scale(1.22) translateY(-4px) !important;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.28), 0 0 0 3px rgba(255,255,255,0.9), 0 0 20px rgba(255,255,255,0.15) !important;
+  filter: brightness(1.12) saturate(1.1);
+}
+.platform-icon:active > div {
+  transform: scale(1.08) translateY(-2px) !important;
   transition-duration: 0.1s;
 }
 [title="YouTube"]   { animation: platform-float 3.8s ease-in-out infinite 0.0s; }
@@ -117,7 +119,7 @@ body {
 [title="WhatsApp"]  { animation: platform-float 3.5s ease-in-out infinite 1.2s; }
 [title="X"]         { animation: platform-float 4.0s ease-in-out infinite 0.3s; }
 [title="TikTok"]    { animation: platform-float 3.7s ease-in-out infinite 0.9s; }
-[title="Instagram"] { animation: platform-float 4.1s ease-in-out infinite 1.5s; }
+[title="Facebook"]  { animation: platform-float 4.1s ease-in-out infinite 1.5s; }
 
 /* ── Button hover effects ──────────────────────────────────────────── */
 .btn-primary {
@@ -177,6 +179,12 @@ body {
 @keyframes wordPop {
   from { opacity: 0; transform: scale(0.85); }
   to   { opacity: 1; transform: scale(1); }
+}
+@keyframes ytFeedScroll {
+  0%   { transform: translateY(60px); }
+  70%  { transform: translateY(-160px); }
+  85%  { transform: translateY(-153px); }
+  100% { transform: translateY(-156px); }
 }
 
 /* ── Email input ───────────────────────────────────────────────────── */

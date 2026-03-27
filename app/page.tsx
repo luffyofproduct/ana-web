@@ -381,7 +381,7 @@ function FeatureDialect() {
 
 // ─── Feature: Your content ───────────────────────────────────────────────────
 function FeatureContent() {
-  const [contentSource, setContentSource] = useState<"whatsapp" | "youtube">("whatsapp");
+  const [contentSource, setContentSource] = useState<"whatsapp" | "youtube" | "tiktok">("whatsapp");
 
   const platformIcons = (
     <>
@@ -389,8 +389,8 @@ function FeatureContent() {
       {[
         { label: "WhatsApp", src: "whatsapp" as const, bg: "#25D366", top: "80px", left: "40px",
           icon: <svg viewBox="0 0 24 24" fill="white" width="26" height="26"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> },
-        { label: "Chrome", bg: "#1a73e8", top: "calc(50% - 26px)", left: "15px",
-          icon: <svg viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.75" strokeLinecap="round" width="26" height="26"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/><line x1="2" y1="12" x2="22" y2="12"/></svg> },
+        { label: "Chrome", bg: "#fff", top: "calc(50% - 26px)", left: "15px",
+          icon: <img src="/Files_App_icon_iOS.png" alt="Files" style={{ width: "52px", height: "52px", objectFit: "cover" }} /> },
         { label: "X", bg: "#000000", bottom: "80px", left: "40px",
           icon: <svg viewBox="0 0 24 24" fill="white" width="24" height="24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg> },
       ].map((p) => {
@@ -408,16 +408,16 @@ function FeatureContent() {
       {[
         { label: "YouTube", src: "youtube" as const, bg: "#FF0000", top: "100px", right: "40px",
           icon: <svg viewBox="0 0 24 24" fill="white" width="26" height="26"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg> },
-        { label: "TikTok", bg: "transparent", top: "calc(50% - 26px)", right: "15px",
+        { label: "TikTok", src: "tiktok" as const, bg: "transparent", top: "calc(50% - 26px)", right: "15px",
           icon: <img src="/tiktok-icon.png" alt="TikTok" style={{ width: "100%", height: "100%", objectFit: "cover", borderRadius: "50%" }} /> },
-        { label: "Instagram", bg: "linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888)", bottom: "100px", right: "40px",
-          icon: <svg viewBox="0 0 24 24" fill="white" width="24" height="24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg> },
+        { label: "Facebook", bg: "#fff", bottom: "100px", right: "40px",
+          icon: <img src="/2021_Facebook_icon.svg.png" alt="Facebook" style={{ width: "52px", height: "52px", objectFit: "cover" }} /> },
       ].map((p) => {
         const isActive = "src" in p && contentSource === (p as any).src;
         const isClickable = "src" in p;
         return (
           <div key={p.label} className="platform-icon" style={{ position: "absolute", top: p.top, bottom: (p as any).bottom, right: p.right, zIndex: 3, cursor: isClickable ? "pointer" : "default" }} onClick={isClickable ? () => setContentSource((p as any).src) : undefined} title={p.label}>
-            <div title={p.label} style={{ width: "52px", height: "52px", borderRadius: "50%", background: p.bg, display: "flex", alignItems: "center", justifyContent: "center", boxShadow: isActive ? "0 4px 20px rgba(0,0,0,0.2), 0 0 0 3px #fff, 0 0 0 5.5px #007aff" : "0 4px 20px rgba(0,0,0,0.15), 0 0 0 4px rgba(255,255,255,0.6)", overflow: "hidden", transform: isActive ? "scale(1.12)" : "scale(1)", transition: "transform 0.22s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.2s ease" }}>
+            <div style={{ width: "52px", height: "52px", borderRadius: "50%", background: p.bg, display: "flex", alignItems: "center", justifyContent: "center", boxShadow: isActive ? "0 4px 20px rgba(0,0,0,0.2), 0 0 0 3px #fff, 0 0 0 5.5px #007aff" : "0 4px 20px rgba(0,0,0,0.15), 0 0 0 4px rgba(255,255,255,0.6)", overflow: "hidden", transform: isActive ? "scale(1.12)" : "scale(1)", transition: "transform 0.22s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.2s ease" }}>
               {p.icon}
             </div>
           </div>
@@ -527,17 +527,17 @@ function PhoneMockup({ children, size = "normal" }: { children: React.ReactNode;
 
 // ─── Feature preview mocks ────────────────────────────────────────────────────
 
-function ContentPreview({ externalSource }: { externalSource?: "whatsapp" | "youtube" }) {
-  // phase 0-5 = WhatsApp (6 steps), phase 6-9 = YouTube (4 steps)
+function ContentPreview({ externalSource }: { externalSource?: "whatsapp" | "youtube" | "tiktok" }) {
+  // phase 0-5 = WhatsApp (6 steps), phase 6-9 = YouTube (4 steps), phase 10-13 = TikTok (4 steps)
   const [phase, setPhase] = useState(0);
   const [timerKey, setTimerKey] = useState(0);
   const [msgCount, setMsgCount] = useState(0); // drip-feed messages in step 0
-  const source = phase < 6 ? "whatsapp" : "youtube";
-  const step = phase < 6 ? phase : phase - 6;
+  const source = phase < 6 ? "whatsapp" : phase < 10 ? "youtube" : "tiktok";
+  const step = phase < 6 ? phase : phase < 10 ? phase - 6 : phase - 10;
   const totalSteps = source === "whatsapp" ? 6 : 4;
 
-  const switchSource = (src: "whatsapp" | "youtube") => {
-    setPhase(src === "whatsapp" ? 0 : 6);
+  const switchSource = (src: "whatsapp" | "youtube" | "tiktok") => {
+    setPhase(src === "whatsapp" ? 0 : src === "youtube" ? 6 : 10);
     setMsgCount(0);
     setTimerKey(k => k + 1);
   };
@@ -564,10 +564,14 @@ function ContentPreview({ externalSource }: { externalSource?: "whatsapp" | "you
 
   // Phase timer — step 0 gets extra time for drip-feed
   useEffect(() => {
-    const delay = (source === "whatsapp" && step === 0) ? 5500 : 2800;
+    const delay = (source === "whatsapp" && step === 0) ? 5500
+      : (source === "youtube" && step === 0) ? 4000
+      : (source === "tiktok" && step === 0) ? 4000
+      : 2800;
     const t = setTimeout(() => setPhase(p => {
       if (p < 6) return (p + 1) % 6;        // WhatsApp: 0→5→0
-      return 6 + ((p - 6 + 1) % 4);          // YouTube: 6→9→6
+      if (p < 10) return 6 + ((p - 6 + 1) % 4); // YouTube: 6→9→6
+      return 10 + ((p - 10 + 1) % 4);       // TikTok: 10→13→10
     }), delay);
     return () => clearTimeout(t);
   // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -576,6 +580,7 @@ function ContentPreview({ externalSource }: { externalSource?: "whatsapp" | "you
   const stepLabels: Record<string, string[]> = {
     whatsapp: ["You got this message", "Forward it to Ana", "Ana received it", "Ana breaks it down", "Pick your words", "Added to your deck"],
     youtube:  ["You're watching this video", "Add it to Ana", "Ana listens for new words", "Ready to study"],
+    tiktok:   ["You're scrolling TikTok", "Share it to Ana", "Ana listens for new words", "Ready to study"],
   };
 
   const waWords = [
@@ -588,7 +593,12 @@ function ContentPreview({ externalSource }: { externalSource?: "whatsapp" | "you
     { arabic: "تمويل",   english: "funding" },
     { arabic: "مشروع",   english: "project" },
   ];
-  const words = source === "whatsapp" ? waWords : ytWords;
+  const tkWords = [
+    { arabic: "حب",      english: "love" },
+    { arabic: "انتظار",   english: "waiting" },
+    { arabic: "موسيقى",   english: "music" },
+  ];
+  const words = source === "whatsapp" ? waWords : source === "youtube" ? ytWords : tkWords;
 
   // WhatsApp chat header — exact Figma node 8:4709 (name kept as Teta / 👵)
   const WAHeader = () => (
@@ -834,7 +844,7 @@ function ContentPreview({ externalSource }: { externalSource?: "whatsapp" | "you
 
   return (
     <div style={{ width: "100%", display: "flex", flexDirection: "column", height: "100%", fontFamily: "var(--font-inter)", cursor: "pointer" }}
-      onClick={() => setPhase(p => (p + 1) % 9)}>
+      onClick={() => setPhase(p => (p + 1) % 14)}>
 
       {/* Step label */}
       <p style={{ fontSize: "0.575rem", fontWeight: 700, color: C.tertiary, letterSpacing: "0.08em", textTransform: "uppercase", marginBottom: "0.5rem" }}>
@@ -1146,55 +1156,304 @@ function ContentPreview({ externalSource }: { externalSource?: "whatsapp" | "you
 
         {/* ── YouTube steps ── */}
         {source === "youtube" && step === 0 && (
-          <div style={{ display: "flex", flexDirection: "column", gap: "0.5rem" }}>
-            {/* Video card */}
-            <div style={{ borderRadius: "0.875rem", overflow: "hidden" }}>
-              <div style={{ background: "linear-gradient(160deg, #004a30 0%, #006442 60%, #1a7a50 100%)", height: "108px", position: "relative", display: "flex", alignItems: "center", justifyContent: "center" }}>
-                <div style={{ width: "34px", height: "34px", borderRadius: "50%", backgroundColor: "rgba(0,0,0,0.55)", display: "flex", alignItems: "center", justifyContent: "center" }}>
-                  <span style={{ color: "#fff", fontSize: "0.875rem", marginLeft: "2px" }}>▶</span>
+          <div style={{ display: "flex", flexDirection: "column", flex: 1, margin: "0 -16px", backgroundColor: "#fff", borderRadius: "0 0 1.5rem 1.5rem", overflow: "hidden" }}>
+            {/* YouTube header */}
+            <div style={{ padding: "6px 12px 0", flexShrink: 0 }}>
+              {/* Top row: logo + icons */}
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "8px" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "2px" }}>
+                  {/* YouTube logo */}
+                  <div style={{ display: "flex", alignItems: "center", gap: "3px" }}>
+                    <img src="/Youtube_logo.png" alt="" style={{ width: "16px", height: "11px", objectFit: "contain" }} />
+                    <span style={{ fontSize: "11px", fontWeight: 700, color: "#0f0f0f", letterSpacing: "-0.5px", fontFamily: "Arial, sans-serif" }}>YouTube</span>
+                  </div>
                 </div>
-                <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, background: "linear-gradient(transparent, rgba(0,0,0,0.65))", padding: "0.5rem 0.75rem" }}>
-                  <p className="arabic" style={{ fontSize: "0.8125rem", color: "#fff", lineHeight: 1.3, fontWeight: 600 }}>كيف تبني شركة ناجحة من الصفر</p>
+                <div style={{ display: "flex", gap: "14px", alignItems: "center" }}>
+                  {/* Cast icon */}
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M1 18v3h3c0-1.66-1.34-3-3-3zm0-4v2c2.76 0 5 2.24 5 5h2c0-3.87-3.13-7-7-7zm0-4v2c4.97 0 9 4.03 9 9h2c0-6.08-4.93-11-11-11zm20-7H3c-1.1 0-2 .9-2 2v3h2V5h18v14h-7v2h7c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z" fill="#0a0a0a"/></svg>
+                  {/* Bell icon */}
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z" fill="#0a0a0a"/></svg>
+                  {/* Search icon */}
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" fill="#0a0a0a"/></svg>
+                  {/* Avatar */}
+                  <img src="/channels4_profile3.jpg" alt="" style={{ width: "20px", height: "20px", borderRadius: "50%", objectFit: "cover" }} />
                 </div>
               </div>
-              <div style={{ backgroundColor: C.surfaceLow, padding: "0.4rem 0.75rem", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                <p style={{ fontSize: "0.575rem", color: C.onSurfaceVariant }}>بزنس بالعربي · 245K views</p>
-                <span style={{ fontSize: "0.55rem", fontWeight: 700, color: C.tertiary, backgroundColor: C.tertiaryFixed, borderRadius: "1rem", padding: "0.15rem 0.5rem" }}>Business</span>
+              {/* Category chips — matching YouTube chip-shape styling */}
+              <div style={{ display: "flex", gap: "6px", overflowX: "hidden", marginBottom: "10px" }}>
+                {/* Explore chip with icon */}
+                <div style={{ display: "flex", alignItems: "center", gap: "4px", backgroundColor: "rgba(0,0,0,0.05)", borderRadius: "8px", padding: "1px 8px", flexShrink: 0 }}>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zM17.9 17.39c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" fill="#0f0f0f"/></svg>
+                  <span style={{ fontSize: "9.5px", fontWeight: 500, color: "#0f0f0f" }}>Explore</span>
+                </div>
+                {["All", "Mixes", "Music", "Business", "Arabic"].map((pill, i) => (
+                  <div key={pill} style={{
+                    backgroundColor: i === 0 ? "#0f0f0f" : "rgba(0,0,0,0.05)",
+                    borderRadius: "8px", padding: "1px 8px", flexShrink: 0,
+                  }}>
+                    <span style={{ fontSize: "9.5px", fontWeight: 500, color: i === 0 ? "#fff" : "#0f0f0f", whiteSpace: "nowrap" }}>{pill}</span>
+                  </div>
+                ))}
               </div>
             </div>
-            {/* Hint */}
-            <div style={{ backgroundColor: C.tertiaryFixed, borderRadius: "0.75rem", padding: "0.5rem 0.75rem", display: "flex", alignItems: "center", gap: "0.375rem" }}>
-              <span style={{ fontSize: "0.75rem" }}>💡</span>
-              <p style={{ fontSize: "0.575rem", color: C.tertiary, fontWeight: 500 }}>Business terms you haven't learned yet</p>
+
+            {/* Feed — scrolling container */}
+            <div style={{ flex: 1, overflow: "hidden", position: "relative" }}>
+              <div style={{ position: "absolute", left: 0, right: 0, top: 0, animation: "ytFeedScroll 1.2s cubic-bezier(0.25, 0.1, 0.25, 1) forwards" }}>
+
+                {/* Video above — starts visible, scrolls up and away */}
+                <div style={{ flexShrink: 0 }}>
+                  {/* Full-bleed thumbnail — 16:9 aspect */}
+                  <div style={{ width: "100%", aspectRatio: "16/9", position: "relative", overflow: "hidden" }}>
+                    <img src="/yt-thumb-2.jpg" alt="" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+                    <div style={{ position: "absolute", bottom: "4px", right: "4px", backgroundColor: "rgba(0,0,0,0.8)", borderRadius: "4px", padding: "2px 4px" }}>
+                      <span style={{ color: "#fff", fontSize: "8.5px", fontWeight: 500, letterSpacing: "0.5px" }}>49:50</span>
+                    </div>
+                  </div>
+                  {/* Metadata row */}
+                  <div style={{ padding: "10px 12px 14px", display: "flex", gap: "10px", alignItems: "flex-start" }}>
+                    <img src="/channels4_profile.jpg" alt="" style={{ width: "30px", height: "30px", borderRadius: "50%", flexShrink: 0, objectFit: "cover" }} />
+                    <div style={{ flex: 1, minWidth: 0 }}>
+                      <p className="arabic" style={{ fontSize: "10.5px", fontWeight: 500, color: "#0f0f0f", lineHeight: 1.4, direction: "rtl", textAlign: "right", marginBottom: "3px", display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical" as const, overflow: "hidden" }}>ماهو البيتكوين؟ - سيف الدين عمّوص - الحلقة 5</p>
+                      <p style={{ fontSize: "8px", color: "#606060", lineHeight: 1.3 }}>SaifedeanArabic</p>
+                      <p style={{ fontSize: "8px", color: "#606060", lineHeight: 1.3 }}>2.1K views · 1 year ago</p>
+                    </div>
+                    <div style={{ flexShrink: 0, marginTop: "2px" }}>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="#606060"><path d="M12 4a2 2 0 100 4 2 2 0 000-4Zm0 6a2 2 0 100 4 2 2 0 000-4Zm0 6a2 2 0 100 4 2 2 0 000-4Z"/></svg>
+                    </div>
+                  </div>
+                </div>
+
+                {/* TARGET video — first in feed, scrolls into view */}
+                <div style={{ flexShrink: 0 }}>
+                  {/* Full-bleed thumbnail — 16:9 aspect */}
+                  <div style={{ width: "100%", aspectRatio: "16/9", position: "relative", overflow: "hidden" }}>
+                    <img src="/yt-thumb.jpg" alt="" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+                    {/* Duration badge */}
+                    <div style={{ position: "absolute", bottom: "4px", right: "4px", backgroundColor: "rgba(0,0,0,0.8)", borderRadius: "4px", padding: "2px 4px" }}>
+                      <span style={{ color: "#fff", fontSize: "8.5px", fontWeight: 500, letterSpacing: "0.5px" }}>1:19:01</span>
+                    </div>
+                    {/* Red progress bar */}
+                    <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: "3px", backgroundColor: "rgba(255,255,255,0.2)" }}>
+                      <div style={{ width: "12%", height: "100%", backgroundColor: "#ff0000" }} />
+                    </div>
+                  </div>
+                  {/* Metadata row */}
+                  <div style={{ padding: "10px 12px 14px", display: "flex", gap: "10px", alignItems: "flex-start" }}>
+                    {/* Channel avatar */}
+                    <img src="/channels4_profile2.jpg" alt="" style={{ width: "30px", height: "30px", borderRadius: "50%", flexShrink: 0, objectFit: "cover" }} />
+                    <div style={{ flex: 1, minWidth: 0 }}>
+                      <p className="arabic" style={{ fontSize: "10.5px", fontWeight: 500, color: "#0f0f0f", lineHeight: 1.4, direction: "rtl", textAlign: "right", marginBottom: "3px", display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical" as const, overflow: "hidden" }}>تحت النار – الحلقة الثالثة | أحمد مسعود، الإبادة في عين الغرب</p>
+                      <p className="arabic" style={{ fontSize: "8px", color: "#606060", lineHeight: 1.3, direction: "rtl", textAlign: "right" }}>تحت النار</p>
+                      <p style={{ fontSize: "8px", color: "#606060", lineHeight: 1.3 }}>5.2K views · 9 months ago</p>
+                    </div>
+                    {/* Three-dot menu */}
+                    <div style={{ flexShrink: 0, marginTop: "2px" }}>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="#606060"><path d="M12 4a2 2 0 100 4 2 2 0 000-4Zm0 6a2 2 0 100 4 2 2 0 000-4Zm0 6a2 2 0 100 4 2 2 0 000-4Z"/></svg>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Shorts section */}
+                <div style={{ flexShrink: 0 }}>
+                  {/* Divider */}
+                  <div style={{ height: "1px", backgroundColor: "#e5e5e5" }} />
+                  {/* Shorts header */}
+                  <div style={{ display: "flex", alignItems: "center", gap: "6px", padding: "12px 12px 10px" }}>
+                    {/* YouTube Shorts icon — matching yt-icon SVG */}
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                      <path d="m19.45,3.88c1.12,1.82.48,4.15-1.42,5.22l-1.32.74.94.41c1.36.58,2.27,1.85,2.35,3.27.08,1.43-.68,2.77-1.97,3.49l-8,4.47c-1.91,1.06-4.35.46-5.48-1.35-1.12-1.82-.48-4.15,1.42-5.22l1.33-.74-.94-.41c-1.36-.58-2.27-1.85-2.35-3.27-.08-1.43.68-2.77,1.97-3.49l8-4.47c1.91-1.06,4.35-.46,5.48,1.35Z" fill="#f03"/>
+                      <path d="m10,15l5-3-5-3v6Z" fill="#fff"/>
+                    </svg>
+                    <span style={{ fontSize: "11px", fontWeight: 600, color: "#0f0f0f" }}>Shorts</span>
+                  </div>
+                  {/* Shorts cards — 2-column grid matching YouTube mobile layout */}
+                  <div style={{ display: "flex", gap: "8px", padding: "0 12px 12px", overflowX: "hidden" }}>
+                    {[
+                      { title: "اكتبولي من وين بتشوفو الفيديو !!", views: "18K views", bg: "linear-gradient(180deg, #3a4a5a 0%, #1a2a3a 100%)" },
+                      { title: "أسرار النجاح في الغربة 💪", views: "1.2M views", bg: "linear-gradient(180deg, #4a3a3a 0%, #2a1a1a 100%)" },
+                      { title: "وصفة كنافة نابلسية", views: "890K views", bg: "linear-gradient(180deg, #3a4a2a 0%, #1a2a1a 100%)" },
+                    ].map((short, i) => (
+                      <div key={i} style={{ width: "95px", minWidth: "95px", flexShrink: 0 }}>
+                        {/* Thumbnail — 2:3 aspect ratio with rounded corners */}
+                        <div style={{
+                          width: "100%", aspectRatio: "2/3", borderRadius: "8px", overflow: "hidden",
+                          background: short.bg, position: "relative",
+                        }}>
+                          {/* Three-dot menu */}
+                          <div style={{ position: "absolute", top: "4px", right: "2px" }}>
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="rgba(255,255,255,0.85)"><path d="M12 4a2 2 0 100 4 2 2 0 000-4Zm0 6a2 2 0 100 4 2 2 0 000-4Zm0 6a2 2 0 100 4 2 2 0 000-4Z"/></svg>
+                          </div>
+                        </div>
+                        {/* Outside metadata — below thumbnail */}
+                        <div style={{ padding: "6px 0 0", display: "flex", alignItems: "flex-start", gap: "2px" }}>
+                          <div style={{ flex: 1, minWidth: 0 }}>
+                            <p className="arabic" style={{ fontSize: "8px", fontWeight: 500, color: "#0f0f0f", lineHeight: 1.35, direction: "rtl", textAlign: "right", display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical" as const, overflow: "hidden" }}>{short.title}</p>
+                            <p style={{ fontSize: "7.5px", color: "#606060", marginTop: "1px" }}>{short.views}</p>
+                          </div>
+                          <div style={{ flexShrink: 0, marginTop: "1px" }}>
+                            <svg width="10" height="10" viewBox="0 0 24 24" fill="#606060"><path d="M12 4a2 2 0 100 4 2 2 0 000-4Zm0 6a2 2 0 100 4 2 2 0 000-4Zm0 6a2 2 0 100 4 2 2 0 000-4Z"/></svg>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+              </div>
             </div>
           </div>
         )}
 
         {source === "youtube" && step === 1 && (
-          <div style={{ display: "flex", flexDirection: "column", flex: 1 }}>
-            {/* Video card — fully visible at top */}
-            <div style={{ borderRadius: "0.875rem", overflow: "hidden", marginBottom: "0.75rem" }}>
-              <div style={{ background: "linear-gradient(160deg, #004a30 0%, #006442 60%, #1a7a50 100%)", height: "108px", position: "relative", display: "flex", alignItems: "center", justifyContent: "center" }}>
-                <div style={{ width: "34px", height: "34px", borderRadius: "50%", backgroundColor: "rgba(0,0,0,0.55)", display: "flex", alignItems: "center", justifyContent: "center" }}>
-                  <span style={{ color: "#fff", fontSize: "0.875rem", marginLeft: "2px" }}>▶</span>
+          <div style={{ display: "flex", flexDirection: "column", flex: 1, margin: "0 -16px", backgroundColor: "#fff", borderRadius: "0 0 1.5rem 1.5rem", overflow: "hidden", position: "relative" }}>
+            {/* YouTube header (dimmed behind share sheet) */}
+            <div style={{ padding: "6px 12px 0", flexShrink: 0, opacity: 0.4 }}>
+              {/* Top row: logo + icons */}
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "8px" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "2px" }}>
+                  <div style={{ display: "flex", alignItems: "center", gap: "3px" }}>
+                    <img src="/Youtube_logo.png" alt="" style={{ width: "16px", height: "11px", objectFit: "contain" }} />
+                    <span style={{ fontSize: "11px", fontWeight: 700, color: "#0f0f0f", letterSpacing: "-0.5px", fontFamily: "Arial, sans-serif" }}>YouTube</span>
+                  </div>
                 </div>
-                <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, background: "linear-gradient(transparent, rgba(0,0,0,0.65))", padding: "0.5rem 0.75rem" }}>
-                  <p className="arabic" style={{ fontSize: "0.8125rem", color: "#fff", lineHeight: 1.3, fontWeight: 600 }}>كيف تبني شركة ناجحة من الصفر</p>
+                <div style={{ display: "flex", gap: "14px", alignItems: "center" }}>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M1 18v3h3c0-1.66-1.34-3-3-3zm0-4v2c2.76 0 5 2.24 5 5h2c0-3.87-3.13-7-7-7zm0-4v2c4.97 0 9 4.03 9 9h2c0-6.08-4.93-11-11-11zm20-7H3c-1.1 0-2 .9-2 2v3h2V5h18v14h-7v2h7c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z" fill="#0a0a0a"/></svg>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z" fill="#0a0a0a"/></svg>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" fill="#0a0a0a"/></svg>
+                  <img src="/channels4_profile3.jpg" alt="" style={{ width: "20px", height: "20px", borderRadius: "50%", objectFit: "cover" }} />
                 </div>
               </div>
-              <div style={{ backgroundColor: C.surfaceLow, padding: "0.4rem 0.75rem", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                <p style={{ fontSize: "0.575rem", color: C.onSurfaceVariant }}>بزنس بالعربي · 245K views</p>
-                <span style={{ fontSize: "0.55rem", fontWeight: 700, color: C.tertiary, backgroundColor: C.tertiaryFixed, borderRadius: "1rem", padding: "0.15rem 0.5rem" }}>Business</span>
+              {/* Category chips */}
+              <div style={{ display: "flex", gap: "6px", overflowX: "hidden", marginBottom: "10px" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "4px", backgroundColor: "rgba(0,0,0,0.05)", borderRadius: "8px", padding: "1px 8px", flexShrink: 0 }}>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zM17.9 17.39c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" fill="#0f0f0f"/></svg>
+                  <span style={{ fontSize: "9.5px", fontWeight: 500, color: "#0f0f0f" }}>Explore</span>
+                </div>
+                {["All", "Mixes", "Music", "Business", "Arabic"].map((pill, i) => (
+                  <div key={pill} style={{
+                    backgroundColor: i === 0 ? "#0f0f0f" : "rgba(0,0,0,0.05)",
+                    borderRadius: "8px", padding: "1px 8px", flexShrink: 0,
+                  }}>
+                    <span style={{ fontSize: "9.5px", fontWeight: 500, color: i === 0 ? "#fff" : "#0f0f0f", whiteSpace: "nowrap" }}>{pill}</span>
+                  </div>
+                ))}
               </div>
             </div>
-            {/* Share sheet fills remaining space below */}
-            <div style={{ flex: 1 }} />
-            <IOSShareSheet />
+
+            {/* Video feed (dimmed) */}
+            <div style={{ flex: 1, overflowY: "hidden", display: "flex", flexDirection: "column", opacity: 0.4 }}>
+              {/* Target video */}
+              <div style={{ flexShrink: 0 }}>
+                <div style={{ width: "100%", height: "120px", position: "relative", overflow: "hidden" }}>
+                  <img src="/yt-thumb.jpg" alt="" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+                  <div style={{ position: "absolute", bottom: "6px", right: "6px", backgroundColor: "rgba(0,0,0,0.8)", borderRadius: "3px", padding: "1px 4px" }}>
+                    <span style={{ color: "#fff", fontSize: "8px", fontWeight: 500 }}>1:19:01</span>
+                  </div>
+                  <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: "3px", backgroundColor: "rgba(255,255,255,0.2)" }}>
+                    <div style={{ width: "12%", height: "100%", backgroundColor: "#ff0000", borderRadius: "0 1px 1px 0" }} />
+                  </div>
+                </div>
+                <div style={{ padding: "8px 12px 4px", display: "flex", gap: "8px" }}>
+                  <img src="/channels4_profile2.jpg" alt="" style={{ width: "28px", height: "28px", borderRadius: "50%", flexShrink: 0, objectFit: "cover" }} />
+                  <div style={{ flex: 1, minWidth: 0 }}>
+                    <p className="arabic" style={{ fontSize: "10.5px", fontWeight: 500, color: "#0a0a0a", lineHeight: 1.35, direction: "rtl", textAlign: "right", marginBottom: "2px" }}>تحت النار – الحلقة الثالثة | أحمد مسعود، الإبادة في عين الغرب</p>
+                    <p className="arabic" style={{ fontSize: "8.5px", color: "#6c6c6c", direction: "rtl", textAlign: "right" }}>تحت النار · 5.2K views · 9 months ago</p>
+                  </div>
+                  <div style={{ flexShrink: 0, display: "flex", alignItems: "flex-start", paddingTop: "2px" }}>
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="#6c6c6c"><circle cx="12" cy="5" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="12" cy="19" r="2"/></svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Share sheet — overlaid at bottom */}
+            <div style={{ flexShrink: 0 }}>
+              <IOSShareSheet edgeToEdge />
+            </div>
           </div>
         )}
 
         {source === "youtube" && step === 2 && <Processing />}
         {source === "youtube" && step === 3 && <Result />}
+
+        {/* ── TikTok steps ── */}
+        {source === "tiktok" && step === 0 && (
+          <div style={{ height: "100%", display: "flex", flexDirection: "column", margin: "0 -16px", backgroundColor: "#000" }}>
+            {/* Video area */}
+            <div style={{ flex: 1, position: "relative", overflow: "hidden" }}>
+              <img src="/tiktok-thumb.jpg" alt="" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }} />
+              {/* Header: Following | For You */}
+              <div style={{ position: "relative", zIndex: 2, display: "flex", justifyContent: "center", alignItems: "center", gap: "14px", paddingTop: "10px" }}>
+                <span style={{ fontSize: "11px", fontWeight: 600, color: "#fff" }}>Following</span>
+                <div style={{ width: "1px", height: "10px", backgroundColor: "rgba(255,255,255,0.3)" }} />
+                <span style={{ fontSize: "12px", fontWeight: 700, color: "rgba(255,255,255,0.5)" }}>For You</span>
+              </div>
+              {/* Right side action buttons */}
+              <div style={{ position: "absolute", right: "8px", bottom: "10px", zIndex: 2, display: "flex", flexDirection: "column", alignItems: "center", gap: "14px" }}>
+                <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "2px" }}>
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                  <span style={{ fontSize: "7.5px", fontWeight: 600, color: "#fff", textShadow: "1px 1px 0 rgba(0,0,0,0.3)" }}>4445</span>
+                </div>
+                <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "2px" }}>
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+                  <span style={{ fontSize: "7.5px", fontWeight: 600, color: "#fff", textShadow: "1px 1px 0 rgba(0,0,0,0.3)" }}>64</span>
+                </div>
+                <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "2px" }}>
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"/></svg>
+                  <span style={{ fontSize: "7.5px", fontWeight: 600, color: "#fff", textShadow: "1px 1px 0 rgba(0,0,0,0.3)" }}>Share</span>
+                </div>
+              </div>
+              {/* Bottom info */}
+              <div style={{ position: "absolute", bottom: "6px", left: "10px", right: "50px", zIndex: 2 }}>
+                <p style={{ fontSize: "11px", fontWeight: 600, color: "#fff", marginBottom: "4px" }}>@iimeeto</p>
+                <p className="arabic" style={{ fontSize: "10.5px", fontWeight: 600, color: "#fff", marginBottom: "4px", direction: "ltr", textAlign: "left" }}>ميتو الشامسي</p>
+                <div style={{ display: "flex", alignItems: "center", gap: "4px" }}>
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="white"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+                  <p className="arabic" style={{ fontSize: "9px", color: "#fff" }}>original sound - ميتو الشامسي</p>
+                </div>
+              </div>
+            </div>
+            {/* Bottom tab bar */}
+            <div style={{ flexShrink: 0, backgroundColor: "#000", padding: "6px 0 4px", display: "flex", justifyContent: "space-around", alignItems: "center" }}>
+              <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "2px" }}>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+                <span style={{ fontSize: "7px", fontWeight: 600, color: "#fff" }}>Home</span>
+              </div>
+              <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "2px", opacity: 0.6 }}>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                <span style={{ fontSize: "7px", color: "#fff" }}>Discover</span>
+              </div>
+              <div style={{ width: "28px", height: "18px", borderRadius: "5px", background: "linear-gradient(90deg, #65D2E9, #E6436D)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                <div style={{ width: "22px", height: "14px", borderRadius: "3px", backgroundColor: "#fff", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                  <span style={{ fontSize: "12px", fontWeight: 700, color: "#000", lineHeight: 1 }}>+</span>
+                </div>
+              </div>
+              <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "2px", opacity: 0.6 }}>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
+                <span style={{ fontSize: "7px", color: "#fff" }}>Inbox</span>
+              </div>
+              <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "2px", opacity: 0.6 }}>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                <span style={{ fontSize: "7px", color: "#fff" }}>Me</span>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {source === "tiktok" && step === 1 && (
+          <div style={{ height: "100%", display: "flex", flexDirection: "column", margin: "0 -16px", backgroundColor: "#000", overflow: "hidden", position: "relative" }}>
+            {/* Dimmed TikTok background */}
+            <img src="/tiktok-thumb.jpg" alt="" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", opacity: 0.4 }} />
+            {/* Share sheet at bottom */}
+            <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, zIndex: 2 }}>
+              <IOSShareSheet edgeToEdge />
+            </div>
+          </div>
+        )}
+
+        {source === "tiktok" && step === 2 && <Processing />}
+        {source === "tiktok" && step === 3 && <Result />}
       </div>
 
       {/* Step dots */}
